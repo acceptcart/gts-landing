@@ -6,12 +6,20 @@ import { PixelPattern } from "@/src/shared/components/layout/PixelPattern";
 import { ContactForm } from "@/src/features/contact/components/ContactForm";
 import { ContactInfo } from "@/src/features/contact/components/ContactInfo";
 import { ContactMap } from "@/src/features/contact/components/ContactMap";
+import { createPageMetadata } from "@/src/shared/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Contact Us",
-  description: "Contact GTS Kuwait for B2B electronics sourcing, wholesale distribution, tenders, and supply partnerships.",
-  alternates: { canonical: "/contact-us" },
-};
+  description:
+    "Contact GTS Kuwait for B2B electronics sourcing, wholesale distribution, government tenders, and long-term supply partnerships. Phone, WhatsApp, email, and Hawally location.",
+  path: "/contact-us",
+  keywords: [
+    "contact GTS Kuwait",
+    "electronics wholesale inquiry Kuwait",
+    "B2B smartphone supplier contact",
+    "GTS Hawally",
+  ],
+});
 
 export default function ContactPage() {
   return (

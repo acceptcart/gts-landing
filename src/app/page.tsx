@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Hero } from "@/src/features/hero/components/Hero";
 import { AboutSection } from "@/src/features/about/components/AboutSection";
 import { VisionMissionSection } from "@/src/features/vision-mission/components/VisionMissionSection";
@@ -11,6 +12,16 @@ import { StrategicGoalsSection } from "@/src/features/strategic-goals/components
 import { FounderSection } from "@/src/features/founder/components/FounderSection";
 import { PartnersSection } from "@/src/features/partners/components/PartnersSection";
 import { CTASection } from "@/src/features/cta/components/CTASection";
+import { createPageMetadata } from "@/src/shared/lib/seo";
+import { company } from "@/src/shared/data/site-content";
+
+export const metadata: Metadata = createPageMetadata({
+  title: `${company.name} | Electronics Distribution in Kuwait`,
+  description:
+    "GTS (Gold Tech Store) imports and distributes smartphones, electronics, and accessories to retailers, distributors, e-commerce platforms, telecoms, and government entities across Kuwait and the Gulf.",
+  path: "/",
+  absoluteTitle: true,
+});
 
 export default function HomePage() {
   return (

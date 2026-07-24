@@ -2,12 +2,15 @@ import type { Metadata } from "next";
 import { terms } from "@/src/shared/data/site-content";
 import { Container } from "@/src/shared/components/ui/Container";
 import { TermsContent } from "@/src/features/terms/components/TermsContent";
+import { createPageMetadata } from "@/src/shared/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Terms & Conditions",
-  description: "Website and B2B commercial terms template for GTS Kuwait.",
-  alternates: { canonical: "/terms-and-conditions" },
-};
+  description:
+    "Terms and conditions for using the GTS Kuwait website and B2B wholesale/distribution commercial framework.",
+  path: "/terms-and-conditions",
+  noIndex: false,
+});
 
 export default function TermsPage() {
   return (
