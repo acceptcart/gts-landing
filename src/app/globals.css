@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+:root {
+  --brand: #d2ef25;
+  --brand-light: #eeff86;
+  --dark-olive: #2c3003;
+  --ink: #050505;
+  --muted: #a3a3a3;
+  --surface: #0b0c08;
+  --line: rgba(255, 255, 255, 0.12);
+}
+
+@theme inline {
+  --color-brand: var(--brand);
+  --color-brand-light: var(--brand-light);
+  --color-dark-olive: var(--dark-olive);
+  --color-ink: var(--ink);
+  --color-surface: var(--surface);
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
+  --shadow-glow: 0 0 50px rgba(210, 239, 37, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--ink);
+}
+
+body {
+  margin: 0;
+  background: var(--ink);
+  color: white;
+  font-family: var(--font-body), sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--brand);
+  color: black;
+}
+
+a,
+button,
+input,
+textarea {
+  outline-color: var(--brand);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 4px;
+}
+
+.font-heading {
+  font-family: var(--font-heading), sans-serif;
+}
+
+.grid-lines {
+  background-image:
+    linear-gradient(rgba(210, 239, 37, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(210, 239, 37, 0.055) 1px, transparent 1px);
+  background-size: 52px 52px;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.marquee {
+  animation: marquee 28s linear infinite;
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
