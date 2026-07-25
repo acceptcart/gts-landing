@@ -285,11 +285,6 @@ export const footer = {
   contactTitle: "Contact",
   legal: "Terms & Conditions",
   backToTop: "Back to top",
-  developedBy: {
-    prefix: "Developed by",
-    name: "Quantum Software",
-    href: "https://quantumsw.tech",
-  },
 } as const;
 
 export type IconComponent = typeof Users;
