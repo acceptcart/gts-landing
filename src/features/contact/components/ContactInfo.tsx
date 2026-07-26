@@ -1,11 +1,10 @@
-import { BriefcaseBusiness, Globe2, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { BriefcaseBusiness, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { contact } from "@/src/shared/data/site-content";
 
 const contactItems = [
   { ...contact.phone, icon: Phone },
   { ...contact.whatsapp, icon: MessageCircle },
   { ...contact.email, icon: Mail },
-  { ...contact.website, icon: Globe2 },
   { ...contact.linkedin, icon: BriefcaseBusiness },
 ] as const;
 

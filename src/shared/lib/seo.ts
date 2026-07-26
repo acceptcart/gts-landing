@@ -8,7 +8,7 @@ export const seo = {
   titleTemplate: `%s | ${company.name}`,
   description: company.description,
   keywords: [
-    "GTS Kuwait",
+    "Gts Kuwait",
     "Gold Tech Store",
     "electronics distributor Kuwait",
     "smartphone wholesale Kuwait",
@@ -110,7 +110,7 @@ export function organizationJsonLd() {
       latitude: 29.3328,
       longitude: 48.0281,
     },
-    sameAs: [contact.linkedin.href, contact.website.href, contact.whatsapp.href],
+    sameAs: [contact.linkedin.href, contact.whatsapp.href],
     areaServed: [
       { "@type": "Country", name: "Kuwait" },
       { "@type": "Place", name: "Gulf Region" },

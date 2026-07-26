@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: `${company.name} — The Backbone of Electronics Distribution`,
+    title: `${company.name} — Grow Your Business. We Handle the Supply`,
     description: seo.description,
     url: absoluteUrl(),
     siteName: company.name,

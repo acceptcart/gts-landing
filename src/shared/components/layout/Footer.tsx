@@ -1,7 +1,8 @@
 import Link from "next/link";
-import { ArrowUp, BriefcaseBusiness, Mail, MapPin, Phone } from "lucide-react";
+import { BriefcaseBusiness, Mail, MapPin, Phone } from "lucide-react";
 import { Container } from "../ui/Container";
 import { Logo } from "./Logo";
+import { BackToTopButton } from "./BackToTopButton";
 import { company, contact, footer, navigation } from "@/src/shared/data/site-content";
 
 export function Footer() {
@@ -34,11 +35,13 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mt-14 flex flex-col gap-5 border-t border-white/10 pt-7 text-xs text-white/35 sm:flex-row sm:items-center sm:justify-between">
-          <p>{company.copyright}</p>
-          <a href="#main-content" className="inline-flex items-center gap-2 hover:text-brand">
-            {footer.backToTop}<ArrowUp aria-hidden="true" className="size-3.5" />
-          </a>
+        <div className="mt-14 flex flex-col gap-5 border-t border-white/10 pt-7 text-xs text-white/35 sm:flex-row sm:items-end sm:justify-between">
+          <div className="space-y-1 leading-6">
+            <p>© {company.legalName}</p>
+            <p>© {company.legalNameAr}</p>
+            <p>{company.copyrightYears}</p>
+          </div>
+          <BackToTopButton />
         </div>
       </Container>
     </footer>

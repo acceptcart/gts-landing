@@ -15,12 +15,11 @@ export function StrategicGoalsSection() {
           <ol className="border-t border-white/15">
             {goals.items.map((goal, index) => (
               <Reveal key={goal} delay={(index % 3) * 0.05}>
-                <li className="grid grid-cols-[auto_1fr_auto] items-center gap-5 border-b border-white/15 py-6">
+                <li className="grid grid-cols-[auto_1fr] items-center gap-5 border-b border-white/15 py-6">
                   <span className="grid size-8 place-items-center rounded-full border border-brand/50 text-brand">
                     <Check aria-hidden="true" className="size-4" />
                   </span>
                   <span className="font-heading text-lg font-semibold sm:text-xl">{goal}</span>
-                  <span className="text-xs text-white/25">0{index + 1}</span>
                 </li>
               </Reveal>
             ))}

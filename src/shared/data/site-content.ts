@@ -31,13 +31,13 @@ import {
 } from "lucide-react";
 
 export const company = {
-  name: "GTS",
+  name: "Gts",
   legalName: "Gold Tech Store Co. for Wholesale & Retail Trade",
+  legalNameAr: "شركة جولد تيك ستور لتجارة الجملة والتجزئة",
   domain: "gts.kw",
   description:
-    "GTS is Kuwait’s trusted B2B source for smartphones, electronics, accessories, and integrated supply solutions.",
-  copyright:
-    "© Gold Tech Store Co. for Wholesale & Retail Trade — 2023–2026. All rights reserved.",
+    "Gts is Kuwait’s trusted B2B source for smartphones, electronics, accessories, and integrated supply solutions.",
+  copyrightYears: "2023 - 2026. All rights reserved.",
 } as const;
 
 export const navigation = {
@@ -56,12 +56,7 @@ export const navigation = {
 
 export const hero = {
   eyebrow: "Kuwait’s B2B Electronics Supply Partner",
-  headlines: [
-    "The Backbone of Electronics Distribution",
-    "Powering Businesses with Reliable Supply",
-    "Your Trusted Electronics Supply Partner",
-    "Connect. Supply. Scale.",
-  ],
+  headlines: ["Grow Your Business. We Handle the Supply"],
   supporting: "Consistent Stock. Competitive Pricing. Fast Delivery.",
   primaryCta: "Get in Touch",
   secondaryCta: "Learn More",
@@ -72,7 +67,7 @@ export const about = {
   eyebrow: "Built for business",
   title: "Reliable technology supply, from source to shelf.",
   body:
-    "GTS is a specialized company importing and supplying electronic devices, smartphones, and accessories to the business sector in Kuwait. We supply stores, distributors, retail chains, e-commerce platforms, corporations, and government entities with reliable products at competitive prices — backed by professional service and clear warranty and after-sales policies. GTS relies on a network of global suppliers and long-term strategic relationships to ensure the latest technology products, delivered to the highest standards of quality and operational efficiency.",
+    "Gts is a specialized company importing and supplying electronic devices, smartphones, and accessories to the business sector in Kuwait. We supply stores, distributors, retail chains, e-commerce platforms, corporations, and government entities with reliable products at competitive prices — backed by professional service and clear warranty and after-sales policies. Gts relies on a network of global suppliers and long-term strategic relationships to ensure the latest technology products, delivered to the highest standards of quality and operational efficiency.",
   features: [
     { title: "Kuwait Market", label: "Established local presence", icon: Landmark },
     { title: "Global Network", label: "Trusted supplier relationships", icon: Earth },
@@ -124,10 +119,10 @@ export const offers = {
 } as const;
 
 export const services = {
-  eyebrow: "The GTS ecosystem",
+  eyebrow: "The Gts ecosystem",
   title: "More than distribution.",
   intro:
-    "At GTS, we don't offer isolated services — we provide a fully integrated ecosystem of supply solutions and professional support, combining the strength of our supply chain with operational efficiency to empower our partners to grow with confidence and sustainability.",
+    "At Gts, we don't offer isolated services — we provide a fully integrated ecosystem of supply solutions and professional support, combining the strength of our supply chain with operational efficiency to empower our partners to grow with confidence and sustainability.",
   items: [
     { title: "Electronics Import & Supply", description: "We source electronic devices, smartphones, and accessories from certified global suppliers and brands, ensuring product quality and supply continuity.", icon: PackageCheck },
     { title: "Latest Products & Technologies", description: "We give our partners early access to the newest devices and technology releases, strengthening their competitive edge and ability to meet evolving customer demands.", icon: Cpu },
@@ -166,7 +161,7 @@ export const sectors = {
 } as const;
 
 export const differentiators = {
-  eyebrow: "Why GTS",
+  eyebrow: "Why Gts",
   title: "A supply partner engineered for momentum.",
   items: [
     { title: "Global Supplier Network", detail: "Connected sourcing", icon: Earth },
@@ -180,7 +175,7 @@ export const goals = {
   eyebrow: "Strategic goals",
   title: "Growing with intention.",
   items: [
-    "Strengthen GTS's position in the Kuwaiti market.",
+    "Strengthen Gts's position in the Kuwaiti market.",
     "Expand our customer and partner base.",
     "Develop our global supply network.",
     "Raise customer satisfaction levels.",
@@ -190,24 +185,13 @@ export const goals = {
   ],
 } as const;
 
-export const founder = {
-  eyebrow: "Leadership",
-  title: "Meet the Founder",
-  name: "Mahmoud Heshmat",
-  role: "Founder & CEO",
-  intro:
-    "Building a trusted electronics supply platform around strong partnerships, operational discipline, and long-term value.",
-  quote: "Trust is the foundation. Reliable supply is the promise.",
-  imageAlt: "Mahmoud Heshmat, Founder and CEO of GTS",
-} as const;
-
 export const partners = {
   eyebrow: "Our partners",
   title: "Connected to a world of supply.",
   intro:
-    "GTS takes pride in building strategic relationships with a network of local and international suppliers and partners, ensuring supply continuity and added value for our clients.",
+    "Gts takes pride in building strategic relationships with a network of local and international suppliers and partners, ensuring supply continuity and added value for our clients.",
   label: "Trusted by leading global and local suppliers",
-  placeholders: ["GLOBAL / 01", "MOBILE / 02", "TECH / 03", "SUPPLY / 04", "NETWORK / 05", "LOGISTICS / 06"],
+  placeholders: ["GLOBAL", "MOBILE", "TECH", "SUPPLY", "NETWORK", "LOGISTICS"],
 } as const;
 
 export const callToAction = {
@@ -218,7 +202,7 @@ export const callToAction = {
 } as const;
 
 export const contact = {
-  eyebrow: "Contact GTS",
+  eyebrow: "Contact Gts",
   title: "Let’s Power Your Business Together.",
   intro: "Tell us what your business needs. Our team will get back to you with the right supply solution.",
   formTitle: "Send an inquiry",
@@ -226,10 +210,9 @@ export const contact = {
   phone: { label: "Phone", value: "+965 5000 7972", href: "tel:+96550007972" },
   whatsapp: { label: "WhatsApp", value: "+965 9896 7713", href: "https://wa.me/96598967713" },
   email: { label: "Email", value: "ERP@Gtsq8.com", href: "mailto:ERP@Gtsq8.com" },
-  website: { label: "Website", value: "gts.kw", href: "https://gts.kw" },
-  linkedin: { label: "LinkedIn", value: "GTS Kuwait", href: "https://www.linkedin.com/company/gtsq8" },
+  linkedin: { label: "LinkedIn", value: "Gts Kuwait", href: "https://www.linkedin.com/company/gtsq8" },
   address: { label: "Address", value: "Nora Commercial Complex, Abdullah Al Othman St., Hawally, Kuwait" },
-  mapTitle: "GTS location in Hawally, Kuwait",
+  mapTitle: "Gts location in Hawally, Kuwait",
   fields: {
     name: "Name",
     company: "Company Name",
@@ -257,25 +240,90 @@ export const contact = {
 
 export const terms = {
   eyebrow: "Legal",
-  title: "Terms & Conditions",
+  title: "Privacy Policy",
   updated: "Template prepared for review — July 2026",
   disclaimer:
     "This is a template and should be reviewed by legal counsel before publishing.",
   intro:
-    "These Terms & Conditions govern your use of the GTS website and outline the general commercial framework that may apply to inquiries and business transactions with Gold Tech Store Co. for Wholesale & Retail Trade.",
+    "This Privacy Policy explains how Gts (Gold Tech Store Co. for Wholesale & Retail Trade) collects, uses, stores, and protects personal and business information when you visit our website or contact us about supply and partnership inquiries.",
   sections: [
-    { title: "1. General Use of Website", paragraphs: ["This website is provided for general business information and inquiry purposes. By accessing it, you agree to use it lawfully and not to disrupt, damage, or misuse any website service, content, or security feature. Information presented on this website does not constitute a binding offer unless expressly confirmed by GTS in writing.", "You are responsible for ensuring that information supplied through forms or other communications is accurate, current, and authorized on behalf of the business or entity you represent."] },
-    { title: "2. Products & Availability", paragraphs: ["Product descriptions, specifications, images, and availability are indicative and may change without notice due to manufacturer updates, market conditions, or supplier availability. GTS may substitute or discontinue products and will communicate material changes before confirming an order.", "Availability is not guaranteed until GTS issues a written order confirmation or executes an applicable supply agreement."] },
-    { title: "3. Pricing & Quotations", paragraphs: ["All prices are subject to written quotation and may vary based on quantity, specifications, currency movements, freight, duties, and market conditions. Unless stated otherwise, a quotation is valid only for the period specified and excludes taxes, delivery, installation, and other third-party charges.", "Pricing displayed or discussed informally is non-binding. Only an authorized written quotation or contract issued by GTS establishes applicable commercial terms."] },
-    { title: "4. Orders & Payment Terms", paragraphs: ["Orders become binding only after written acceptance by GTS. Payment schedules, credit limits, deposits, accepted payment methods, and any security requirements will be set out in the relevant quotation, purchase order acceptance, or supply agreement.", "Late or incomplete payment may result in suspension of fulfillment, cancellation, recovery costs, or other remedies permitted by contract and applicable law."] },
-    { title: "5. Delivery & Shipping", paragraphs: ["Delivery dates are estimates unless expressly guaranteed in writing. GTS will use commercially reasonable efforts to meet agreed schedules but is not responsible for delays caused by customs, carriers, suppliers, force majeure events, or circumstances beyond its reasonable control.", "Risk, title, inspection periods, shipping charges, and delivery acceptance will be governed by the applicable quotation or contract. Customers must promptly report visible shortages or transport damage."] },
-    { title: "6. Warranty & After-Sales Policy", paragraphs: ["Warranty coverage varies by product, manufacturer, territory, and agreed commercial terms. Warranty support is subject to proof of purchase, serial-number verification, proper use, and compliance with applicable manufacturer or GTS procedures.", "Warranty does not normally cover accidental damage, misuse, unauthorized repair, altered serial numbers, improper storage, or ordinary wear. Specific service levels will be confirmed in the transaction documents."] },
-    { title: "7. Returns & Exchanges", paragraphs: ["Returns or exchanges require prior written authorization and are subject to the agreed return window, product condition, packaging, serial-number verification, and restocking or logistics charges where applicable. Customized, activated, clearance, or specially sourced products may be non-returnable.", "No product should be returned until GTS provides instructions and a return authorization reference."] },
-    { title: "8. Intellectual Property", paragraphs: ["The website, brand marks, designs, text, graphics, and other content are owned by or licensed to GTS and are protected by applicable intellectual property laws. No content may be reproduced, modified, distributed, or used commercially without prior written permission.", "Third-party brand names and trademarks remain the property of their respective owners and are used for identification only."] },
-    { title: "9. Limitation of Liability", paragraphs: ["To the fullest extent permitted by law, GTS will not be liable for indirect, incidental, special, or consequential loss arising from website use, delayed availability, or reliance on non-binding information. Any transaction-specific liability will be governed by the applicable written agreement.", "Nothing in these terms excludes liability that cannot lawfully be excluded under the laws of the State of Kuwait."] },
-    { title: "10. Governing Law", paragraphs: ["These Terms & Conditions are governed by the laws of the State of Kuwait. Subject to any agreed dispute-resolution procedure, the competent courts of Kuwait will have jurisdiction over disputes arising from these terms or use of this website."] },
-    { title: "11. Changes to Terms", paragraphs: ["GTS may update these Terms & Conditions from time to time. The version posted on this page applies from its stated effective date. Continued website use after an update constitutes acceptance of the revised terms."] },
-    { title: "12. Contact Information", paragraphs: ["Questions about these terms may be directed to ERP@Gtsq8.com or to GTS at Nora Commercial Complex, Abdullah Al Othman St., Hawally, Kuwait."] },
+    {
+      title: "1. Information We Collect",
+      paragraphs: [
+        "We may collect personal and business details that you voluntarily provide through our contact forms or communications, including your name, company name, email address, phone number, subject, and message content.",
+        "We may also collect limited technical information automatically, such as browser type, device information, IP address, and general usage data that helps us understand how visitors interact with our website.",
+      ],
+    },
+    {
+      title: "2. How We Use Your Information",
+      paragraphs: [
+        "We use collected information to respond to inquiries, provide business support, manage partnership and supply discussions, improve website performance, and communicate relevant updates related to our services.",
+        "We do not sell personal information. Information is processed only for legitimate business purposes related to Gts operations and customer communication.",
+      ],
+    },
+    {
+      title: "3. Legal Basis for Processing",
+      paragraphs: [
+        "Where applicable, we process information based on your consent, our legitimate interest in operating a B2B electronics distribution business, and the need to respond to commercial inquiries or pre-contractual requests.",
+      ],
+    },
+    {
+      title: "4. Cookies & Website Analytics",
+      paragraphs: [
+        "Our website may use cookies or similar technologies to support essential functionality, remember preferences, and analyze traffic in aggregate form.",
+        "You can control cookies through your browser settings. Disabling certain cookies may affect website performance or features.",
+      ],
+    },
+    {
+      title: "5. Data Sharing",
+      paragraphs: [
+        "We may share information with trusted service providers who support website hosting, communications, IT, or business operations, only as needed to deliver those services.",
+        "We may also disclose information when required by applicable law, regulation, legal process, or to protect the rights, safety, and integrity of Gts, our partners, or users.",
+      ],
+    },
+    {
+      title: "6. Data Retention",
+      paragraphs: [
+        "We retain personal and business information only for as long as reasonably necessary to fulfill the purpose for which it was collected, respond to follow-up inquiries, meet legal or accounting requirements, or resolve disputes.",
+      ],
+    },
+    {
+      title: "7. Data Security",
+      paragraphs: [
+        "We apply reasonable administrative and technical measures to protect information against unauthorized access, alteration, disclosure, or destruction. No method of transmission or storage is completely secure, and absolute security cannot be guaranteed.",
+      ],
+    },
+    {
+      title: "8. Your Rights",
+      paragraphs: [
+        "Subject to applicable Kuwaiti law, you may request access to, correction of, or deletion of personal information we hold about you, or ask us to limit certain processing activities.",
+        "To exercise these rights, contact us using the details below. We may need to verify your identity before responding to a request.",
+      ],
+    },
+    {
+      title: "9. Third-Party Links",
+      paragraphs: [
+        "Our website may include links to third-party platforms such as LinkedIn or messaging services. We are not responsible for the privacy practices or content of external websites and services.",
+      ],
+    },
+    {
+      title: "10. International Transfers",
+      paragraphs: [
+        "If information is transferred or processed outside Kuwait in connection with service providers or communication tools, we take reasonable steps to ensure appropriate safeguards are applied where required.",
+      ],
+    },
+    {
+      title: "11. Changes to This Policy",
+      paragraphs: [
+        "Gts may update this Privacy Policy from time to time. The version published on this page applies from its stated update date. Continued use of the website after changes means you acknowledge the updated policy.",
+      ],
+    },
+    {
+      title: "12. Contact Information",
+      paragraphs: [
+        "For privacy-related questions or requests, contact Gts at ERP@Gtsq8.com or Nora Commercial Complex, Abdullah Al Othman St., Hawally, Kuwait.",
+      ],
+    },
   ],
 } as const;
 
@@ -283,7 +331,7 @@ export const footer = {
   tagline: "The backbone of electronics distribution.",
   navigationTitle: "Navigate",
   contactTitle: "Contact",
-  legal: "Terms & Conditions",
+  legal: "Privacy Policy",
   backToTop: "Back to top",
 } as const;
 

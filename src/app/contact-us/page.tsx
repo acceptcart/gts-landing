@@ -11,13 +11,13 @@ import { createPageMetadata } from "@/src/shared/lib/seo";
 export const metadata: Metadata = createPageMetadata({
   title: "Contact Us",
   description:
-    "Contact GTS Kuwait for B2B electronics sourcing, wholesale distribution, government tenders, and long-term supply partnerships. Phone, WhatsApp, email, and Hawally location.",
+    "Contact Gts Kuwait for B2B electronics sourcing, wholesale distribution, government tenders, and long-term supply partnerships. Phone, WhatsApp, email, and Hawally location.",
   path: "/contact-us",
   keywords: [
-    "contact GTS Kuwait",
+    "contact Gts Kuwait",
     "electronics wholesale inquiry Kuwait",
     "B2B smartphone supplier contact",
-    "GTS Hawally",
+    "Gts Hawally",
   ],
 });
 

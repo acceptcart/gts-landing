@@ -43,7 +43,7 @@ export function ContactForm() {
       return;
     }
 
-    // TODO: Connect this form to the GTS CRM or preferred form endpoint.
+    // TODO: Connect this form to the Gts CRM or preferred form endpoint.
     setSubmitted(true);
   }
 

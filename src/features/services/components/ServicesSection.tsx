@@ -28,8 +28,7 @@ export function ServicesSection() {
                 <span className="grid size-12 place-items-center border border-brand/30 text-brand">
                   <Icon aria-hidden="true" className="size-5" />
                 </span>
-                <p className="mt-9 text-xs font-semibold tracking-[0.15em] text-brand">0{index + 1}</p>
-                <h3 className="mt-3 font-heading text-xl font-bold leading-tight sm:text-2xl">{item.title}</h3>
+                <h3 className="mt-9 font-heading text-xl font-bold leading-tight sm:text-2xl">{item.title}</h3>
                 <p className="mt-4 text-sm leading-7 text-white/50">{item.description}</p>
               </Reveal>
             );

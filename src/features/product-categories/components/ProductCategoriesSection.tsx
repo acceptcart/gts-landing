@@ -26,8 +26,7 @@ export function ProductCategoriesSection() {
                 <div className="relative flex h-full flex-col">
                   <Icon aria-hidden="true" className="size-12 text-brand" strokeWidth={1.3} />
                   <div className="mt-auto">
-                    <span className="text-xs font-semibold tracking-[0.18em] text-brand">CATEGORY / 0{index + 1}</span>
-                    <h3 className="mt-3 font-heading text-3xl font-bold">{item.title}</h3>
+                    <h3 className="font-heading text-3xl font-bold text-brand">{item.title}</h3>
                     <p className="mt-3 max-w-md text-sm leading-7 text-white/55">{item.description}</p>
                   </div>
                 </div>

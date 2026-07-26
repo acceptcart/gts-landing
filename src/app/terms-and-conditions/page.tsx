@@ -5,9 +5,9 @@ import { TermsContent } from "@/src/features/terms/components/TermsContent";
 import { createPageMetadata } from "@/src/shared/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Terms & Conditions",
+  title: "Privacy Policy",
   description:
-    "Terms and conditions for using the GTS Kuwait website and B2B wholesale/distribution commercial framework.",
+    "Privacy Policy for the Gts Kuwait website covering data collection, use, cookies, retention, and your rights.",
   path: "/terms-and-conditions",
   noIndex: false,
 });

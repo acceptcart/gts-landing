@@ -11,12 +11,12 @@ export function Logo({ className }: LogoProps) {
   return (
     <Link
       href="/"
-      aria-label="GTS home"
+      aria-label="Gts home"
       className={cn("inline-flex items-center", className)}
     >
       <Image
         src="/logo.png"
-        alt="GTS"
+        alt="Gts"
         width={140}
         height={48}
         priority
