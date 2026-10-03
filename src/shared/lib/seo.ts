@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { company, contact } from "@/src/shared/data/site-content";
 
-export const siteUrl = "https://gts.kw";
+export const siteUrl = "https://www.gtsq8.com";
 
 export const seo = {
   title: `${company.name} | Electronics Distribution in Kuwait`,

@@ -34,7 +34,7 @@ export const company = {
   name: "Gts",
   legalName: "Gold Tech Store Co. for Wholesale & Retail Trade",
   legalNameAr: "شركة جولد تيك ستور لتجارة الجملة والتجزئة",
-  domain: "gts.kw",
+  domain: "www.gtsq8.com",
   description:
     "Gts is Kuwait’s trusted B2B source for smartphones, electronics, accessories, and integrated supply solutions.",
   copyrightYears: "2023 - 2026. All rights reserved.",
