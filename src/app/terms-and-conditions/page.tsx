@@ -2,19 +2,31 @@ import type { Metadata } from "next";
 import { terms } from "@/src/shared/data/site-content";
 import { Container } from "@/src/shared/components/ui/Container";
 import { TermsContent } from "@/src/features/terms/components/TermsContent";
-import { createPageMetadata } from "@/src/shared/lib/seo";
+import { JsonLd } from "@/src/shared/components/seo/JsonLd";
+import { breadcrumbJsonLd, createPageMetadata, webPageJsonLd } from "@/src/shared/lib/seo";
+
+const title = "Privacy Policy";
+const description =
+  "Privacy Policy for the Gts Kuwait website covering data collection, use, cookies, retention, and your rights.";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Privacy Policy",
-  description:
-    "Privacy Policy for the Gts Kuwait website covering data collection, use, cookies, retention, and your rights.",
+  title,
+  description,
   path: "/terms-and-conditions",
-  noIndex: false,
 });
 
 export default function TermsPage() {
   return (
     <main id="main-content" className="bg-white text-black">
+      <JsonLd
+        data={[
+          webPageJsonLd({ title, description, path: "/terms-and-conditions" }),
+          breadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Privacy Policy", path: "/terms-and-conditions" },
+          ]),
+        ]}
+      />
       <header className="bg-black pb-20 pt-36 text-white sm:pb-24 sm:pt-44">
         <Container>
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand">{terms.eyebrow}</p>

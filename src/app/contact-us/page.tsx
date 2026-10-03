@@ -6,12 +6,16 @@ import { PixelPattern } from "@/src/shared/components/layout/PixelPattern";
 import { ContactForm } from "@/src/features/contact/components/ContactForm";
 import { ContactInfo } from "@/src/features/contact/components/ContactInfo";
 import { ContactMap } from "@/src/features/contact/components/ContactMap";
-import { createPageMetadata } from "@/src/shared/lib/seo";
+import { JsonLd } from "@/src/shared/components/seo/JsonLd";
+import { breadcrumbJsonLd, createPageMetadata, webPageJsonLd } from "@/src/shared/lib/seo";
+
+const title = "Contact Us";
+const description =
+  "Contact Gts Kuwait for B2B electronics sourcing, wholesale distribution, government tenders, and long-term supply partnerships. Phone, WhatsApp, email, and Hawally location.";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Contact Us",
-  description:
-    "Contact Gts Kuwait for B2B electronics sourcing, wholesale distribution, government tenders, and long-term supply partnerships. Phone, WhatsApp, email, and Hawally location.",
+  title,
+  description,
   path: "/contact-us",
   keywords: [
     "contact Gts Kuwait",
@@ -24,6 +28,15 @@ export const metadata: Metadata = createPageMetadata({
 export default function ContactPage() {
   return (
     <main id="main-content" className="bg-black">
+      <JsonLd
+        data={[
+          webPageJsonLd({ title, description, path: "/contact-us", type: "ContactPage" }),
+          breadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Contact Us", path: "/contact-us" },
+          ]),
+        ]}
+      />
       <section className="grid-lines relative overflow-hidden pb-20 pt-36 sm:pb-24 sm:pt-44">
         <PixelPattern className="-right-12 top-20 w-72" />
         <Container className="relative">

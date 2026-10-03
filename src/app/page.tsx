@@ -11,13 +11,17 @@ import { DifferentiatorsSection } from "@/src/features/differentiators/component
 import { StrategicGoalsSection } from "@/src/features/strategic-goals/components/StrategicGoalsSection";
 import { PartnersSection } from "@/src/features/partners/components/PartnersSection";
 import { CTASection } from "@/src/features/cta/components/CTASection";
-import { createPageMetadata } from "@/src/shared/lib/seo";
+import { JsonLd } from "@/src/shared/components/seo/JsonLd";
+import { createPageMetadata, webPageJsonLd } from "@/src/shared/lib/seo";
 import { company } from "@/src/shared/data/site-content";
 
+const title = `${company.name} | Electronics Distribution in Kuwait`;
+const description =
+  "Gts (Gold Tech Store) imports and distributes smartphones, electronics, and accessories to retailers, distributors, e-commerce platforms, telecoms, and government entities across Kuwait and the Gulf.";
+
 export const metadata: Metadata = createPageMetadata({
-  title: `${company.name} | Electronics Distribution in Kuwait`,
-  description:
-    "Gts (Gold Tech Store) imports and distributes smartphones, electronics, and accessories to retailers, distributors, e-commerce platforms, telecoms, and government entities across Kuwait and the Gulf.",
+  title,
+  description,
   path: "/",
   absoluteTitle: true,
 });
@@ -25,6 +29,7 @@ export const metadata: Metadata = createPageMetadata({
 export default function HomePage() {
   return (
     <main id="main-content">
+      <JsonLd data={webPageJsonLd({ title, description, path: "/" })} />
       <Hero />
       <AboutSection />
       <VisionMissionSection />

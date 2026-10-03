@@ -21,8 +21,16 @@ export const seo = {
   ],
 } as const;
 
+export const ogImage = {
+  url: "/logo.png",
+  width: 704,
+  height: 284,
+  alt: `${company.name} — ${company.legalName}`,
+} as const;
+
 export function absoluteUrl(path = "/"): string {
   if (path.startsWith("http")) return path;
+  if (path === "/" || path === "") return siteUrl;
   return `${siteUrl}${path.startsWith("/") ? path : `/${path}`}`;
 }
 
@@ -46,8 +54,14 @@ export function createPageMetadata({
   return {
     title: absoluteTitle ? { absolute: title } : title,
     description,
-    keywords: keywords ?? [...seo.keywords],
-    alternates: { canonical: path },
+    keywords: [...new Set([...seo.keywords, ...(keywords ?? [])])],
+    alternates: {
+      canonical: path,
+      languages: {
+        "en-KW": path,
+        en: path,
+      },
+    },
     openGraph: {
       title,
       description,
@@ -57,10 +71,10 @@ export function createPageMetadata({
       type: "website",
       images: [
         {
-          url: absoluteUrl("/logo.png"),
-          width: 1200,
-          height: 630,
-          alt: `${company.name} — ${company.legalName}`,
+          url: absoluteUrl(ogImage.url),
+          width: ogImage.width,
+          height: ogImage.height,
+          alt: ogImage.alt,
         },
       ],
     },
@@ -136,6 +150,44 @@ export function websiteJsonLd() {
     name: company.name,
     description: company.description,
     publisher: { "@id": `${siteUrl}/#organization` },
-    inLanguage: "en",
+    inLanguage: "en-KW",
+  };
+}
+
+export function webPageJsonLd({
+  title,
+  description,
+  path,
+  type = "WebPage",
+}: {
+  title: string;
+  description: string;
+  path: string;
+  type?: "WebPage" | "ContactPage";
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": type,
+    "@id": `${absoluteUrl(path)}#webpage`,
+    url: absoluteUrl(path),
+    name: title,
+    description,
+    isPartOf: { "@id": `${siteUrl}/#website` },
+    about: { "@id": `${siteUrl}/#organization` },
+    inLanguage: "en-KW",
+    primaryImageOfPage: absoluteUrl(ogImage.url),
+  };
+}
+
+export function breadcrumbJsonLd(items: Array<{ name: string; path: string }>) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: absoluteUrl(item.path),
+    })),
   };
 }

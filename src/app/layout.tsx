@@ -6,8 +6,10 @@ import { JsonLd } from "@/src/shared/components/seo/JsonLd";
 import { company, contact, navigation } from "@/src/shared/data/site-content";
 import {
   absoluteUrl,
+  ogImage,
   organizationJsonLd,
   seo,
+  siteUrl,
   websiteJsonLd,
 } from "@/src/shared/lib/seo";
 import "./globals.css";
@@ -26,7 +28,7 @@ const bodyFont = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(absoluteUrl()),
+  metadataBase: new URL(siteUrl),
   title: {
     default: seo.title,
     template: seo.titleTemplate,
@@ -53,10 +55,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: absoluteUrl("/logo.png"),
-        width: 1200,
-        height: 630,
-        alt: `${company.name} logo`,
+        url: absoluteUrl(ogImage.url),
+        width: ogImage.width,
+        height: ogImage.height,
+        alt: ogImage.alt,
       },
     ],
   },
@@ -64,14 +66,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${company.name} — Electronics Distribution`,
     description: seo.description,
-    images: [absoluteUrl("/logo.png")],
-  },
-  alternates: {
-    canonical: "/",
-    languages: {
-      "en-KW": "/",
-      en: "/",
-    },
+    images: [absoluteUrl(ogImage.url)],
   },
   robots: {
     index: true,
